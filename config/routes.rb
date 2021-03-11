@@ -9,6 +9,10 @@ Rails.application.routes.draw do
   patch "/products/:id", controller: "products", action: "update"
   delete "/products/:id", controller: "products", action: "destroy"
 
+  get "/carted_products", controller: "carted_products", action: "index"
+  post "/carted_products", controller: "carted_products", action: "create"
+  delete "/carted_products", controller: "carted_products", action: "destroy"
+
   get "/orders", controller: "orders", action: "index"
   post "/orders", controller: "orders", action: "create"
   get "/orders/:id", controller: "orders", action: "show"
