@@ -23,3 +23,17 @@ Image.create(product_id: 4, url: "http://cdn.shopify.com/s/files/1/0289/1534/pro
 Image.create(product_id: 5, url: "https://s-media-cache-ak0.pinimg.com/736x/9c/15/7b/9c157bea5331463f9c539cbce739a4b8.jpg")
 Image.create(product_id: 6, url: "http://www.thinkgeek.com/images/products/zoom/imkj_12th_doc_sonic_screw_remote.jpg")
 Image.create(product_id: 7, url: "https://staticdelivery.nexusmods.com/mods/1151/images/12353-0-1461721930.png")
+
+Category.create!(name: "Weapons")
+Category.create!(name: "Star Wars")
+Category.create!(name: "Household goods")
+
+CategoryProduct.create!(product_id: 1, category_id: 3)
+CategoryProduct.create!(product_id: 2, category_id: 3)
+CategoryProduct.create!(product_id: 3, category_id: 1)
+CategoryProduct.create!(product_id: 3, category_id: 2)
+CategoryProduct.create!(product_id: 4, category_id: 1)
+CategoryProduct.create!(product_id: 5, category_id: 3)
+CategoryProduct.create!(product_id: 6, category_id: 1)
+CategoryProduct.create!(product_id: 7, category_id: 2)
+CategoryProduct.create!(product_id: 7, category_id: 3)
